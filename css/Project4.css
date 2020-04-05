@@ -1,0 +1,454 @@
+/* Global variables
+ * 
+ */
+
+:root {
+  --site-theme-color: royalblue;
+  --site-link-color-default: white;
+  --site-link-hover-color: orange;
+}
+
+.row-header {
+  background-color: royalblue;
+  /* above repeat, in case does not support CSS variable */
+  background-color: var(--site-theme-color);
+}
+
+
+/* Default font using Google Fonts - most popular Roboto */
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  padding: 2em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  color: var(--site-link-hover-color);
+}
+
+.spacer {
+  border: 0;
+  margin: 0;
+  padding: .25em 1em;
+}
+
+.header {
+  padding: 1em 1em;
+  background-color: royalblue;
+  background-color: var(--site-theme-color);
+  color: white;
+}
+
+.header a {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  color: var(--site-link-color-default);
+  text-decoration: none;
+}
+
+.aboutus-row {
+  padding: 1em;
+}
+
+.aboutus-row1 {
+  padding: 1em;
+  background-image: url("../images/About Us.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 500px;
+  width: 100%;
+  text-align: right;
+}
+
+#aboutus-line {
+  border-bottom: .25em solid royalblue;
+  width: 2em;
+  display: inline-block;
+}
+
+#aboutus {
+  display: inline-block;
+  font-size: .75em;
+}
+
+#aboutus-goal {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#aboutus-staff {
+  font-size: .75em;
+}
+
+#business-line {
+  border-bottom: .25em solid white;
+  margin: 2em 0 0 4em;
+  width: 2em;
+  display: inline-block;
+}
+
+#business {
+  display: inline-block;
+  font-size: .75em;
+  color: white;
+}
+
+.business-row {
+  border: 0;
+  color: white;
+}
+
+.business-row-image-education {
+  background-image: url("../images/education.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 430px;
+}
+
+.business-row-image {
+  background-image: url("../images/Communication.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 430px;
+}
+
+.business-row h2 {
+  padding: 0 30px;
+  font-size: 2em;
+}
+
+.business-row a {
+  color: white;
+  text-decoration: none;
+}
+
+.business-list-image {
+  border: 0;
+  padding: 0;
+  width: 3em;
+  position: absolute;
+}
+
+.business-list-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.business-list-header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.business-list-text {
+  font-size: .75em;
+}
+
+.business-list {
+  border: 0;
+  margin: auto 1em;
+}
+
+#news-line {
+  border-bottom: .25em solid royalblue;
+  width: 2em;
+  display: inline-block;
+}
+
+#news {
+  display: inline-block;
+  font-size: .75em;
+}
+
+#news-latest {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.news-header {
+  padding: 2em 1em 0 1em;
+}
+
+.news-column-image {
+  background-image: url("../images/About Us.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+}
+
+.article-news {
+  border: 0;
+  margin: 0em;
+  padding: 1em;
+}
+
+.article-news-item {
+  border: 1px solid gray;
+  margin: 0;
+  padding: 0;
+}
+
+.article-image {
+  width: 100%;
+  margin: -1em 0 0 0;
+}
+
+.article-title {
+  padding: 0em 1em 0 .5em;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+.article-text {
+  padding: 0em 1em 0 .5em;
+  font-size: .75em;
+  color: black;
+}
+
+.article-readmore {
+  padding: 0em 1em 0 .5em;
+  font-size: .75em;
+  color: black;
+}
+
+.contacts-item {
+  padding: 0 1em;
+}
+
+#contacts-line {
+  border-bottom: .25em solid royalblue;
+  width: 2em;
+  display: inline-block;
+}
+
+#contacts {
+  display: inline-block;
+  font-size: .75em;
+}
+
+#contacts-text {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.contacts-send-button {
+  text-align: center;
+}
+
+.contact-label {
+  padding-left: 1em;
+  list-style-type: disc;
+}
+
+.client-input-info {
+  font-size: .75em;
+  /* width: 10em; */
+  padding: .75em;
+}
+
+.client-input-message {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .75em;
+  padding: .75em;
+}
+
+.client-send-button {
+  border: 0;
+  background-color: orange;
+  color: white;
+  padding: .75em;
+  border-radius: .25em;
+}
+
+.footer-row {
+  background-color: black;
+  color: white;
+}
+
+.footer-col {
+  padding: 1em 1em 1em 1em;
+  border: none;
+}
+
+.footer-col-send {
+  padding: 1em 1em .25em 1em;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: .05em solid gray;
+  border-left: 0;
+}
+
+.footer-header-text {
+  color: gray;
+  font-size: 1em;
+}
+
+.footer-text {
+  color: gray;
+  font-size: .75em;
+}
+
+.footer-col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-text li {
+  padding: .25em .25em;
+  color: gray;
+}
+
+.footer-text li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-text li a:hover {
+  color: orange;
+  color: var(--site-link-hover-color);
+}
+
+.footer-copyright {
+  border-top: 1px solid gray;
+  margin: -1em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.footer-client-input-info {
+  background-color: black;
+  border: 0;
+  color: gray;
+  font-size: .75em;
+  width: 10em;
+  padding: .25em 0 .25em 0;
+}
+
+.footer-client-send-button {
+  border: 0;
+  color: black;
+  padding: .15em 0 .15em 0;
+  width: 5em;
+  border-radius: .15em;
+  float: right;
+}
+
+
+/* ref textarea 100%  
+ * https://davidwalsh.name/textarea-width 
+ */
+
+
+/* textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+} */
+
+
+/* https://getbootstrap.com/docs/4.3/components/card/#card-columns */
+
+.card-columns {
+  column-count: 2;
+}
+
+
+/* Tablet Responsive
+ */
+
+@media (max-width: 768px) {
+  #business-line {
+    border-bottom: .25em solid white;
+    margin: 2em 0 0 2em;
+    width: 2em;
+    display: inline-block;
+  }
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+
+/* Mobile Responsive: top nav menu for mobile
+ *   _ modify bootstrap specific classes accordingly
+ */
+
+@media (max-width: 576px) {
+  #business-line {
+    border-bottom: .25em solid white;
+    margin: 2em 0 0 0em;
+    width: 2em;
+    display: inline-block;
+  }
+  .contact-label {
+    padding-left: 0em;
+    margin-bottom: 0em;
+    list-style-type: none;
+  }
+  .card-columns {
+    column-count: 1;
+  }
+  /* nav: modify bootstrap '.navbar'
+   */
+  #myNavbar div {
+    background-color: white;
+  }
+  .navbar {
+    background-color: white;
+    color: black;
+  }
+  /* brand: modify bootstrap '.navbar-brand'
+   */
+  .navbar-dark .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+    color: #007bff;
+  }
+  .navbar-dark .navbar-brand:hover,
+  .navbar-dark .navbar-brand:focus {
+    color: rgba(0, 0, 0, 0.9);
+    color: var(--site-link-hover-color);
+  }
+  /* collapse menu: modify bootstrap '.navbar-toggler'
+   */
+  .navbar-dark .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    /* border-color: rgba(0, 0, 0, 0.1); */
+  }
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  /* collapse menu items: modify bootstrap '.nav-link' 
+   */
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .navbar-dark .navbar-nav .nav-link.disabled {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
